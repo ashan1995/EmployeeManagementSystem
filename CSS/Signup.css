@@ -10,6 +10,9 @@ input[type=text], input[type=password],select {
     border: none;
     background: #f1f1f1;
 }
+.techsel{
+    padding: 15px;
+}
 
 
 input[type=text]:focus, input[type=password]:focus ,select:focus{

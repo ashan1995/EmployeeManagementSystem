@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/Signup.css" />
+    
 </head>
 <body>
         <div id="id01" class="modal">
@@ -19,9 +20,9 @@
               <input type="text" placeholder="First Name" name="fName" required>
 
               <label class="labels" for="lName"><b>Last Name</b></label>
-              <input type="text" placeholder="Last Name" name="lName" required
+              <input type="text" placeholder="Last Name" name="lName" required>
               <label class="labels" for="email"><b>Department</b></label>
-              <select name="department" def>
+              <select name="department">
                   <option value="dev">Developer</option>
                   <option value="qa">Quality Assurance</option>
                   <option value="ba">Buisness Analysts</option>
@@ -30,10 +31,11 @@
               <input type="hidden" id="sel">
             <!--tech select-->
                 <div id="techs">
-                    <select multiple name="technm" id="techsel">
-                        <option value="java">Java</option>
-                        <option value="angular">Angular</option>
-                        <option value="mongo">Mongo
+                    <label class="labels" for="technm"><b>Technologies</b></label>
+                    <select multiple name="technm" >
+                        <option class="techsel" value="java">Java</option>
+                        <option class="techsel" value="angular">Angular</option>
+                        <option class="techsel" value="mongo">Mongo
                         </option>
                     </select>
                 </div>
