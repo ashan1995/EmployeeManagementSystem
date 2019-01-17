@@ -28,7 +28,7 @@
                                         <button>Sign In</button>
                                     </form>    
                                     <div class="modal-content signupbox">
-                                       <p> New User ? <a href="Signup.html">Create an Account</a></p>
+                                       <p> New User? <a href="Signup.html">Create an Account</a></p>
                                     </div>
                            </div>
                         
