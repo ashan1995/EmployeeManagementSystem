@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  include 'includes/database.include.php';
+  if(isset($_SESSION['userName'])){
+    header("Location: Main.php");
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,23 +26,24 @@
                 </div>
                 <div class="col-md-5 custom-right">
                           <div class="loginbox">
-                                    <form class="modal-content loginform" action="/action_page.php">
-                                        <label class="labels" for="Username"><b>First Name</b></label>
-                                        <input type="text" placeholder="Username" name="Username" required>
-        
-                                        <label class="labels" for="password"><b>Last Name</b></label>
+                                    <form class="modal-content loginform" method="POST" action="includes/login.include.php">
+                                        <label class="labels" for="Username"><b>User Name</b></label>
+                                        <input type="text" placeholder="Username" name="userName" required>
+
+                                        <label class="labels" for="password"><b>Password</b></label>
                                         <input type="password" placeholder="Password" name="password" required>
 
                                         <button>Sign In</button>
-                                    </form>    
+                                    </form>
                                     <div class="modal-content signupbox">
-                                       <p> New User? <a href="Signup.html">Create an Account</a></p>
+                                       <p> New Project Manager? <a href="PMSignup.php">Create an Account</a></p>
+                                       <p> New Employee? <a href="EmpSignup.php">Create an Account</a></p>
                                     </div>
                            </div>
-                        
+
                 </div>
         </div>
-       
+
     </div>
 </body>
 </html>

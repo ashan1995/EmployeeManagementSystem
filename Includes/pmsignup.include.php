@@ -8,8 +8,6 @@
   $lastName=$_POST['lastName'];
   $userName=$_POST['username'];
   $email=$_POST['email'];
-  $department=$_POST['department'];
-  $role=$_POST['role'];
   $password=$_POST['password'];
   $passwordRepeat=$_POST['passwordRepeat'];
 
@@ -26,13 +24,13 @@
     $userNameCheck2=mysqli_num_rows($result2);
 
     if($userNameCheck>0 || $userNameCheck2>0){
-      header("Location: ../EmpSignup.php?error=UsernameAlreadyExists");
+      header("Location: ../PMSignup.php?error=UsernameAlreadyExists");
       exit();
     }
     else{
       $encriptedPassword=md5($password);
-      $sql="INSERT INTO employee(firstname,lastname,username,email,department,role,password)
-            VALUES('$firstName','$lastName','$userName','$email','$department','$role','$encriptedPassword')";
+      $sql="INSERT INTO pm(firstname,lastname,username,email,password)
+            VALUES('$firstName','$lastName','$userName','$email','$encriptedPassword')";
       $result=$conn->query($sql);
 
 
