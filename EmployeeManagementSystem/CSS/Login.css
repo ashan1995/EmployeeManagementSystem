@@ -1,0 +1,95 @@
+body{
+    color: rgba(255,255,255,0.6);
+    background: url(../Assets/bg.jpg),#2b3137;
+    background-position: center 10%;
+    background-size: cover;
+}
+
+
+
+#topic{
+    font-family:  'Candara',Arial, sans-serif;
+    padding-top: 45%;
+    
+}
+
+.custom-left{
+    text-align: center;
+    background: url();
+}
+
+.loginbox{
+    padding-top: 50%;
+    margin: 0 auto;
+    
+}
+
+.custom-right{
+    text-align: center;
+    
+}
+
+.loginform{
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.1) !important;
+     
+}
+
+.signupbox{
+    padding: 5px;
+    margin-top: 20px;
+    background-color:rgba(0, 0, 0, 0.1) !important;   
+}
+a:hover{
+    text-decoration: none !important;
+    color: blue;
+}
+
+
+/* forms */
+input[type=text], input[type=password],select {
+    width: 80%;
+    margin: 5px auto 15px auto;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    padding: 5px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus ,select:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+
+button {
+    background-color: #28a745;
+    background-image: linear-gradient(-180deg, #34d058 0%, #28a745 90%);
+    color: white;
+    border: 1px solid rgba(27,31,35,0.2);
+    border-radius: 0.25em !important;
+    margin: 0 auto !important;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+
+
+
+/*   */
+

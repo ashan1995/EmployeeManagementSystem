@@ -23,12 +23,12 @@
         </nav>
 
         <div class="container">
-            <div class="jumbostron">
+            <div class="jumbotron">
                 <h3>Project List</h3>
             </div>
             <div class="row">
                 <h4>create foreach loop</h4>
-                <div>
+                <div class="project-list">
                     <button type="button" class="btn btn-link">Project Name with initiative (project 01)</button> 
                     <button  type="button" class="btn btn-danger pull-right btn-sm"> Close</button>
                 </div>

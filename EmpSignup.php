@@ -11,7 +11,7 @@
 </head>
 <body>
         <div id="id01" class="modal">
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content" method="POST" action="includes/empsignup.include.php">
             <div class="container">
               <h1>Sign Up</h1>
               <p>Please fill in this form to create an account.</p>
@@ -33,7 +33,7 @@
               <input type="password" placeholder="Enter Password" name="password" id="psw" required>
         
               <label class="labels" for="psw-repeat"><b>Repeat Password</b></label>
-              <input type="password" placeholder="Repeat Password" name="rePasswordt" id="psw-repeat" required>
+              <input type="password" placeholder="Repeat Password" name="passwordRepeat" id="psw-repeat" required>
 
               <label class="labels" for="email"><b>Department</b></label>
               <select name="department">
@@ -45,8 +45,13 @@
               <input type="hidden" id="sel">
             <!--tech select-->
                 <div id="techs">
-                    <label class="labels" for="technm"><b>Technologies</b></label>
-                    <select multiple name="technm" >
+                    <label class="labels" for="role"><b>Role</b></label>
+                    <select name="role" >
+                        <option value="frontend">Front End</option>
+                        <option value="backend">Back End</option>
+                        <option value="fullstack">FullStack</option>
+                        <option value="ba">BA</option>
+                        <option value="qa">QA</option>
                     </select>
                 </div>
 
